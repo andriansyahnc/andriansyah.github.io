@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on M Andriansyah NC</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://andri.in/posts/</link>
     <description>Recent content in Posts on M Andriansyah NC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Jun 2020 23:56:41 +0700</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://andri.in/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Homebrew: How to Install Apache on MacOS</title>
-      <link>http://localhost:1313/posts/homebrew-how-to-install-apache-on-macos/</link>
+      <link>https://andri.in/posts/homebrew-how-to-install-apache-on-macos/</link>
       <pubDate>Thu, 18 Jun 2020 23:56:41 +0700</pubDate>
       
-      <guid>http://localhost:1313/posts/homebrew-how-to-install-apache-on-macos/</guid>
+      <guid>https://andri.in/posts/homebrew-how-to-install-apache-on-macos/</guid>
       <description>Prerequisites  Homebrew: Homebrew is a free and open-source software package management system that simplifies the installation of software on Apple&amp;rsquo;s macOS operating system. Please install Homebrew based on the official site  The installation steps.   Uninstall pre-installed Apache (if any).
 Run this command
 sudo Apachectl stop
