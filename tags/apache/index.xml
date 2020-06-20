@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>M Andriansyah Nurcahya</title>
-    <link>https://andri.in/</link>
-    <description>Recent content on M Andriansyah Nurcahya</description>
+    <title>Apache on M Andriansyah Nurcahya</title>
+    <link>https://andri.in/tags/apache/</link>
+    <description>Recent content in Apache on M Andriansyah Nurcahya</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Jun 2020 01:32:48 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2020 23:56:41 +0700</lastBuildDate>
     
-	<atom:link href="https://andri.in/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://andri.in/tags/apache/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Hugo: How to Install Share Buttons in Your Posts</title>
-      <link>https://andri.in/posts/hugo-share-buttons/</link>
-      <pubDate>Sun, 21 Jun 2020 01:32:48 +0700</pubDate>
-      
-      <guid>https://andri.in/posts/hugo-share-buttons/</guid>
-      <description>Prerequisites  Code Editor: A software used for editing code. Can be anything from Sublime Text, Visual Studio Code, Atom, or another texteditor. For this tutorial, I personally used Visual Studio Code.  The installation steps.  Download the file share-buttons.html and save it under the folder layouts/partials directory of your project.
- Add the following line to your layout on the place where you want the share button appear. {{ partial &amp;#34;share-buttons.</description>
-    </item>
     
     <item>
       <title>Homebrew: How to Install Apache on MacOS</title>

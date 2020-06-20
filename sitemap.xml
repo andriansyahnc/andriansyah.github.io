@@ -3,17 +3,67 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://andri.in/tags/buttons/</loc>
+    <lastmod>2020-06-21T01:32:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://andri.in/tags/hugo/</loc>
+    <lastmod>2020-06-21T01:32:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://andri.in/posts/hugo-share-buttons/</loc>
+    <lastmod>2020-06-21T01:32:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://andri.in/</loc>
+    <lastmod>2020-06-21T01:32:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://andri.in/posts/</loc>
+    <lastmod>2020-06-21T01:32:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://andri.in/tags/share/</loc>
+    <lastmod>2020-06-21T01:32:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://andri.in/tags/share-buttons/</loc>
+    <lastmod>2020-06-21T01:32:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://andri.in/tags/</loc>
+    <lastmod>2020-06-21T01:32:48+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://andri.in/tags/apache/</loc>
+    <lastmod>2020-06-18T23:56:41+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://andri.in/tags/catalina/</loc>
+    <lastmod>2020-06-18T23:56:41+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://andri.in/tags/homebrew/</loc>
+    <lastmod>2020-06-18T23:56:41+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://andri.in/posts/homebrew-how-to-install-apache-on-macos/</loc>
     <lastmod>2020-06-18T23:56:41+07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://andri.in/</loc>
-    <lastmod>2020-06-18T23:56:41+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://andri.in/posts/</loc>
+    <loc>https://andri.in/tags/macos/</loc>
     <lastmod>2020-06-18T23:56:41+07:00</lastmod>
   </url>
   
@@ -23,10 +73,6 @@
   
   <url>
     <loc>https://andri.in/series/</loc>
-  </url>
-  
-  <url>
-    <loc>https://andri.in/tags/</loc>
   </url>
   
 </urlset>
