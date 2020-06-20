@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on M Andriansyah NC</title>
+    <title>Posts on M Andriansyah Nurcahya</title>
     <link>https://andri.in/posts/</link>
-    <description>Recent content in Posts on M Andriansyah NC</description>
+    <description>Recent content in Posts on M Andriansyah Nurcahya</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Jun 2020 23:56:41 +0700</lastBuildDate>
@@ -19,9 +19,7 @@
       <guid>https://andri.in/posts/homebrew-how-to-install-apache-on-macos/</guid>
       <description>Prerequisites  Homebrew: Homebrew is a free and open-source software package management system that simplifies the installation of software on Apple&amp;rsquo;s macOS operating system. Please install Homebrew based on the official site  The installation steps.   Uninstall pre-installed Apache (if any).
 Run this command on your terminal
-sudo Apachectl stop
-sudo launchctl unload -w /System/Library/LaunchDaemons/org.Apache.httpd.plist
-  Install Apache (httpd) using Homebrew.
+sudo Apachectl stop sudo launchctl unload -w /System/Library/LaunchDaemons/org.Apache.httpd.plist   Install Apache (httpd) using Homebrew.
 Run this command on your terminal</description>
     </item>
     

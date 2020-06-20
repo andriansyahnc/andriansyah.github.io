@@ -7,23 +7,19 @@
 
     <meta name="author" content="M Andriansyah Nurcahya">
     <meta name="description" content="M Andriansyah&#39;s personal website">
-    <meta name="keywords" content="blog,developer,personal">
+    <meta name="keywords" content="blog,developer,personal,andriansyah,nurcahya,andriansyah nurcahya,m andriansyah nurcahya">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Homebrew: How to Install Apache on MacOS"/>
 <meta name="twitter:description" content="Prerequisites  Homebrew: Homebrew is a free and open-source software package management system that simplifies the installation of software on Apple&rsquo;s macOS operating system. Please install Homebrew based on the official site  The installation steps.   Uninstall pre-installed Apache (if any).
 Run this command on your terminal
-sudo Apachectl stop
-sudo launchctl unload -w /System/Library/LaunchDaemons/org.Apache.httpd.plist
-  Install Apache (httpd) using Homebrew.
+sudo Apachectl stop sudo launchctl unload -w /System/Library/LaunchDaemons/org.Apache.httpd.plist   Install Apache (httpd) using Homebrew.
 Run this command on your terminal"/>
 
     <meta property="og:title" content="Homebrew: How to Install Apache on MacOS" />
 <meta property="og:description" content="Prerequisites  Homebrew: Homebrew is a free and open-source software package management system that simplifies the installation of software on Apple&rsquo;s macOS operating system. Please install Homebrew based on the official site  The installation steps.   Uninstall pre-installed Apache (if any).
 Run this command on your terminal
-sudo Apachectl stop
-sudo launchctl unload -w /System/Library/LaunchDaemons/org.Apache.httpd.plist
-  Install Apache (httpd) using Homebrew.
+sudo Apachectl stop sudo launchctl unload -w /System/Library/LaunchDaemons/org.Apache.httpd.plist   Install Apache (httpd) using Homebrew.
 Run this command on your terminal" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://andri.in/posts/homebrew-how-to-install-apache-on-macos/" />
@@ -35,7 +31,7 @@ Run this command on your terminal" />
       <base href="https://andri.in/posts/homebrew-how-to-install-apache-on-macos/">
     
     <title>
-  Homebrew: How to Install Apache on MacOS · M Andriansyah NC
+  Homebrew: How to Install Apache on MacOS · M Andriansyah Nurcahya
 </title>
 
     
@@ -63,8 +59,6 @@ Run this command on your terminal" />
     
 
     
-      <link rel="stylesheet" href="https://andri.in/css/custom.css" />
-    
 
     
 
@@ -80,12 +74,12 @@ Run this command on your terminal" />
   
     
   
-  <body class="colorscheme-dark">
+  <body class="colorscheme-auto">
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="https://andri.in/">
-      M Andriansyah NC
+      M Andriansyah Nurcahya
     </a>
     
     <input type="checkbox" id="menu-toggle" />
@@ -145,62 +139,83 @@ Run this command on your terminal" />
 <ul>
 <li>
 <p>Uninstall pre-installed Apache (if any).<br>
-Run this command on your terminal<br>
-<code>sudo Apachectl stop</code><br>
-<code>sudo launchctl unload -w /System/Library/LaunchDaemons/org.Apache.httpd.plist</code></p>
-</li>
+Run this command on your terminal</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sudo Apachectl stop
+sudo launchctl unload -w /System/Library/LaunchDaemons/org.Apache.httpd.plist
+</code></pre></div></li>
 <li>
 <p>Install Apache (httpd) using Homebrew.<br>
-Run this command on your terminal<br>
-<code>brew install httpd</code></p>
-</li>
+Run this command on your terminal</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">brew install httpd  
+</code></pre></div></li>
 <li>
 <p>Start the Apache.
-If you don&rsquo;t want/need a background service, you can just run:<br>
-<code>Apachectl start</code><br>
-Or, to have launchd start httpd now and restart at login:<br>
-<code>brew services start httpd</code></p>
-</li>
+If you don&rsquo;t want/need a background service, you can just run:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Apachectl start
+</code></pre></div><p>Or, to have launchd start httpd now and restart at login:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">brew services start httpd
+</code></pre></div></li>
 <li>
 <p>Configure the Apache settings / configuration.
 Open the Apache configuration that should be generated on <code>/usr/local/etc/httpd/httpd.conf</code>. This is what I usually do:</p>
 <ol>
-<li>Set port.<br>
-Search the <code>Listen 8080</code> part on the configuration, and change the <code>8080</code> port to your liking (in this case it is <code>80</code>)</li>
-<li>Set Apache&rsquo;s user and group.<br>
-Search <code>User _www</code> change to <code>User your_username</code><br>
-Search <code>Group _www</code> change to <code>Group staff</code></li>
-<li>Enable rewrite module.<br>
-Search for<br>
-<code># LoadModule rewrite_module lib/httpd/modules/mod_rewrite.so</code><br>
-and remove the leading # to be<br>
-<code>LoadModule rewrite_module lib/httpd/modules/mod_rewrite.so</code></li>
-<li>Change DocumentRoot folder.<br>
-Search for<br>
-<code>DocumentRoot /usr/local/var/www</code><br>
-and replace the folder to your <code>Sites</code> folder in your home, example:<br>
-<code>DocumentRoot /Users/your_username/Sites</code></li>
-<li>Change <code>Directory</code> tag folder pointer<br>
-Search for<br>
-<code>&lt;Directory /usr/local/var/www&gt;</code><br>
-and replace the folder to your <code>Sites</code> folder in your home, example:<br>
-<code>&lt;Directory /Users/your_username/Sites</code></li>
-<li>Enable the use of <code>.htaccess</code> file in Apache.
-In the <code>Directory</code> block searched in No 5, search for <code>AllowOverride</code> Key, and set it into <code>All</code>, it should shows as something like this.<br>
-<code>AllowOverride all</code></li>
+<li>
+<p>Set port.<br>
+Search this part on the configuration.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Listen 8080
+</code></pre></div><p>Change the <code>8080</code> port to your liking (in this case it is <code>80</code>), example:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Listen 80
+</code></pre></div></li>
+<li>
+<p>Set Apache&rsquo;s user and group.<br>
+Search this part on the configuration.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">User _www
+Group _www
+</code></pre></div><p>Change the <code>_www</code> user into your username, and the <code>_www</code> group into <code>staff</code>, so it will be like this:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">User your_username
+Group staff
+</code></pre></div></li>
+<li>
+<p>Enable rewrite module.<br>
+Search for</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback"># LoadModule rewrite_module lib/httpd/modules/mod_rewrite.so`
+</code></pre></div><p>and remove the leading # to be</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">LoadModule rewrite_module lib/httpd/modules/mod_rewrite.so
+</code></pre></div></li>
+<li>
+<p>Change DocumentRoot folder.<br>
+Search for</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">DocumentRoot /usr/local/var/www
+</code></pre></div><p>and replace the folder to your <code>Sites</code> folder in your home, example:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">DocumentRoot /Users/your_username/Sites
+</code></pre></div></li>
+<li>
+<p>Change <code>Directory</code> tag folder pointer<br>
+Search for</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">&lt;Directory /usr/local/var/www&gt;
+</code></pre></div><p>and replace the folder to your <code>Sites</code> folder in your home, example:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">&lt;Directory /Users/your_username/Sites
+</code></pre></div></li>
+<li>
+<p>Enable the use of <code>.htaccess</code> file in Apache.
+In the <code>Directory</code> block searched in No 5, search for <code>AllowOverride</code> Key, and set it into <code>All</code>, it should shows as something like this.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">AllowOverride all
+</code></pre></div></li>
 </ol>
 </li>
 <li>
 <p>Restart Apache.<br>
-Let&rsquo;s restart Apache to ensure the configuration have taken effect. To do that, run using this command on your terminal.
-<code>sudo apachectl -k restart</code></p>
-</li>
+Let&rsquo;s restart Apache to ensure the configuration have taken effect. To do that, run using this command on your terminal.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sudo apachectl -k restart
+</code></pre></div></li>
 <li>
 <p>Create the <code>Sites</code> folder.
-Let&rsquo;s create the <code>Sites</code> folder in your directory, and add a sample index.html file using this command on your terminal.<br>
-<code>mkdir ~/Sites</code><br>
-<code>echo &quot;Hello World!&quot; &gt; ~/Sites/index.html</code><br>
-Now, go to your browser and type <code>http://localhost</code>. This should display a <code>Hello World!</code>. All done!</p>
+Let&rsquo;s create the <code>Sites</code> folder in your directory, and add a sample index.html file using this command on your terminal.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">mkdir ~/Sites
+echo &#34;Hello World!&#34; &gt; ~/Sites/index.html
+</code></pre></div><p>Now, go to your browser and type <code>http://localhost</code>. This should display a page which shows something like this:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Hello World!
+</code></pre></div><p>All done!</p>
 </li>
 </ul>
 
