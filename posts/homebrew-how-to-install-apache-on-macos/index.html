@@ -12,23 +12,19 @@
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Homebrew: How to Install Apache on MacOS"/>
 <meta name="twitter:description" content="Prerequisites  Homebrew: Homebrew is a free and open-source software package management system that simplifies the installation of software on Apple&rsquo;s macOS operating system. Please install Homebrew based on the official site  The installation steps.   Uninstall pre-installed Apache (if any).
-Run this command
+Run this command on your terminal
 sudo Apachectl stop
 sudo launchctl unload -w /System/Library/LaunchDaemons/org.Apache.httpd.plist
   Install Apache (httpd) using Homebrew.
-Run this command
-brew install httpd
-  Start the Apache."/>
+Run this command on your terminal"/>
 
     <meta property="og:title" content="Homebrew: How to Install Apache on MacOS" />
 <meta property="og:description" content="Prerequisites  Homebrew: Homebrew is a free and open-source software package management system that simplifies the installation of software on Apple&rsquo;s macOS operating system. Please install Homebrew based on the official site  The installation steps.   Uninstall pre-installed Apache (if any).
-Run this command
+Run this command on your terminal
 sudo Apachectl stop
 sudo launchctl unload -w /System/Library/LaunchDaemons/org.Apache.httpd.plist
   Install Apache (httpd) using Homebrew.
-Run this command
-brew install httpd
-  Start the Apache." />
+Run this command on your terminal" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://andri.in/posts/homebrew-how-to-install-apache-on-macos/" />
 <meta property="article:published_time" content="2020-06-18T23:56:41+07:00" />
@@ -149,13 +145,13 @@ brew install httpd
 <ul>
 <li>
 <p>Uninstall pre-installed Apache (if any).<br>
-Run this command<br>
+Run this command on your terminal<br>
 <code>sudo Apachectl stop</code><br>
 <code>sudo launchctl unload -w /System/Library/LaunchDaemons/org.Apache.httpd.plist</code></p>
 </li>
 <li>
 <p>Install Apache (httpd) using Homebrew.<br>
-Run this command<br>
+Run this command on your terminal<br>
 <code>brew install httpd</code></p>
 </li>
 <li>
@@ -196,12 +192,12 @@ In the <code>Directory</code> block searched in No 5, search for <code>AllowOver
 </li>
 <li>
 <p>Restart Apache.<br>
-Let&rsquo;s restart Apache to ensure the configuration have taken effect using this command.
-<code>Sudo apachectl -k restart</code></p>
+Let&rsquo;s restart Apache to ensure the configuration have taken effect. To do that, run using this command on your terminal.
+<code>sudo apachectl -k restart</code></p>
 </li>
 <li>
 <p>Create the <code>Sites</code> folder.
-Let&rsquo;s create the <code>Sites</code> folder in your directory, and add a sample index.html file using this command.<br>
+Let&rsquo;s create the <code>Sites</code> folder in your directory, and add a sample index.html file using this command on your terminal.<br>
 <code>mkdir ~/Sites</code><br>
 <code>echo &quot;Hello World!&quot; &gt; ~/Sites/index.html</code><br>
 Now, go to your browser and type <code>http://localhost</code>. This should display a <code>Hello World!</code>. All done!</p>
