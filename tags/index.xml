@@ -2,84 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on M Andriansyah Nurcahya</title>
-    <link>https://andri.in/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on M Andriansyah Nurcahya</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Jun 2020 01:32:48 +0700</lastBuildDate>
     
-	<atom:link href="https://andri.in/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>buttons</title>
-      <link>https://andri.in/tags/buttons/</link>
+      <link>/tags/buttons/</link>
       <pubDate>Sun, 21 Jun 2020 01:32:48 +0700</pubDate>
       
-      <guid>https://andri.in/tags/buttons/</guid>
+      <guid>/tags/buttons/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://andri.in/tags/hugo/</link>
+      <link>/tags/hugo/</link>
       <pubDate>Sun, 21 Jun 2020 01:32:48 +0700</pubDate>
       
-      <guid>https://andri.in/tags/hugo/</guid>
+      <guid>/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>share</title>
-      <link>https://andri.in/tags/share/</link>
+      <link>/tags/share/</link>
       <pubDate>Sun, 21 Jun 2020 01:32:48 +0700</pubDate>
       
-      <guid>https://andri.in/tags/share/</guid>
+      <guid>/tags/share/</guid>
       <description></description>
     </item>
     
     <item>
       <title>share buttons</title>
-      <link>https://andri.in/tags/share-buttons/</link>
+      <link>/tags/share-buttons/</link>
       <pubDate>Sun, 21 Jun 2020 01:32:48 +0700</pubDate>
       
-      <guid>https://andri.in/tags/share-buttons/</guid>
+      <guid>/tags/share-buttons/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Apache</title>
-      <link>https://andri.in/tags/apache/</link>
+      <link>/tags/apache/</link>
       <pubDate>Thu, 18 Jun 2020 23:56:41 +0700</pubDate>
       
-      <guid>https://andri.in/tags/apache/</guid>
+      <guid>/tags/apache/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Catalina</title>
-      <link>https://andri.in/tags/catalina/</link>
+      <link>/tags/catalina/</link>
       <pubDate>Thu, 18 Jun 2020 23:56:41 +0700</pubDate>
       
-      <guid>https://andri.in/tags/catalina/</guid>
+      <guid>/tags/catalina/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Homebrew</title>
-      <link>https://andri.in/tags/homebrew/</link>
+      <link>/tags/homebrew/</link>
       <pubDate>Thu, 18 Jun 2020 23:56:41 +0700</pubDate>
       
-      <guid>https://andri.in/tags/homebrew/</guid>
+      <guid>/tags/homebrew/</guid>
       <description></description>
     </item>
     
     <item>
       <title>macOS</title>
-      <link>https://andri.in/tags/macos/</link>
+      <link>/tags/macos/</link>
       <pubDate>Thu, 18 Jun 2020 23:56:41 +0700</pubDate>
       
-      <guid>https://andri.in/tags/macos/</guid>
+      <guid>/tags/macos/</guid>
       <description></description>
     </item>
     
